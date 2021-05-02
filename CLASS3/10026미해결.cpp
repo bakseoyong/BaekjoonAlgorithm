@@ -2,8 +2,8 @@
 using namespace std;
 
 void DFS(int painting[100][100], int y, int x, int N, int RGB){
-    int dx = {-1, 0, 1, 0};
-    int dy = {0, 1, 0, -1};
+    int dx[4] = {-1, 0, 1, 0};
+    int dy[4] = {0, 1, 0, -1};
 
     for(int i = 0; i < 4; i++){
         if(y + dy[i] < 0 || y + dy[i] >= N) continue;
