@@ -5,6 +5,7 @@ using namespace std;
 int N;
 int arr[200];
 int dp[200];
+int maxNum = 0;
 
 int main(){
     cin >> N;
@@ -18,7 +19,11 @@ int main(){
         for(int j = 0; j < i; j++){
             if(arr[i] > arr[j] && dp[i] < dp[j] + 1){
                 dp[i] = dp[j] + 1;
+                if(maxNum < dp[i]) maxNum = dp[i];
             }
         }
     }
+
+    cout << N - maxNum;
+    return 0;
 }
