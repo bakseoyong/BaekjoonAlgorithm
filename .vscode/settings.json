@@ -4,6 +4,7 @@
         "cstdlib": "cpp",
         "iostream": "cpp",
         "regex": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "*.tcc": "cpp"
     }
 }
