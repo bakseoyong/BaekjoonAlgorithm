@@ -90,7 +90,7 @@ int main(){
             else if(map[i][j] == 6) {
                 wallV.push_back(make_pair(i, j)); 
             }
-        }
+        };
     }
 
     A(0);
